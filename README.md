@@ -1,15 +1,16 @@
-# DayZ Dev Website – Vercel Static Deploy
+# DayZ Dev Website – Vercel SPA Package
 
-This package contains a single-page static site ready for Vercel.
+This package includes:
+- `index.html` – your site
+- `vercel.json` – rewrites all paths (e.g., `/foo`) to `/index.html`
+- `404.html` – fallback page
+- `README.md` – instructions
 
-## Files
-- `index.html` – your site entry file (copied from your original `dayz_dev_website.html`).
+## Deploy
+1) New Project → Import → Upload this zip.
+2) Framework preset: **Other** (or auto-detected).
+3) Build command: **None**
+4) Output directory: **.** (the project root)
+5) Deploy.
 
-## Deploy on Vercel
-1. Create a new Project on Vercel.
-2. Select “Import…” and upload this zip, or push these files to a new Git repo and import it.
-3. No `vercel.json` is required. Vercel will serve `index.html` automatically.
-4. Visit your deployment URL.
-
-## Optional
-- If you want to keep a non-index filename, add a `vercel.json` with a rewrite to that file.
+If you previously visited a bad path, hard refresh (Ctrl+F5) due to caching.

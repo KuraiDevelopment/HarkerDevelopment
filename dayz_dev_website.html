@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kirsten Harker Development | DayZ Server Specialist</title>
+    <meta name="description" content="Professional DayZ Server Development - Custom mods, server optimization, and expert management services">
     <style>
         * {
             margin: 0;
@@ -317,7 +318,11 @@
             }
 
             .nav-links {
-                display: none;
+                gap: 1rem;
+            }
+
+            .nav-links a {
+                font-size: 0.9rem;
             }
 
             .services-grid {
@@ -470,7 +475,6 @@
     </footer>
 
     <script>
-        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -481,7 +485,6 @@
             });
         });
 
-        // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -499,7 +502,6 @@
             observer.observe(el);
         });
 
-        // Skill bar animation on scroll
         const skillObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
